@@ -1,0 +1,12 @@
+opencv-python~=4.7.0.72
+albumentations~=1.3.1
+torch~=2.1.0.dev20230520
+numpy~=1.23.0
+matplotlib~=3.7.1
+segmentation_models_pytorch
+scikit-learn~=1.2.2
+grad-cam
+tqdm~=4.65.0
+pillow~=9.5.0
+segmentation-models-pytorch~=0.3.4
+torchvision~=0.16.2
