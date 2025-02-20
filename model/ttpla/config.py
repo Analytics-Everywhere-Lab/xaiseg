@@ -14,8 +14,8 @@ x_train_dir = os.path.join(TRAIN_DIR, 'img')
 y_train_dir = os.path.join(TRAIN_DIR, 'ann')
 x_test_dir = os.path.join(TEST_DIR, 'img')
 y_test_dir = os.path.join(TEST_DIR, 'ann')
-x_valid_dir = os.path.join(VAL_DIR, 'img')
-y_valid_dir = os.path.join(VAL_DIR, 'ann')
+x_val_dir = os.path.join(VAL_DIR, 'img')
+y_val_dir = os.path.join(VAL_DIR, 'ann')
 
 EPOCHS = 1000
 
