@@ -2,7 +2,7 @@ import os
 import torch
 from pytorch_grad_cam import *
 
-ROOT_DIR = "/home/r6639/Projects/xaiseg/data/substation"
+ROOT_DIR = "/home/r6639/Projects/xaiseg/data/ttpla"
 DATA_DIR = os.path.join(ROOT_DIR, "ds")
 ANN_DIR = os.path.join(DATA_DIR, "ann")
 IMG_DIR = os.path.join(DATA_DIR, "img")
@@ -19,18 +19,12 @@ y_val_dir = os.path.join(VAL_DIR, 'ann')
 
 EPOCHS = 1000
 
-CLASSES = ['breaker', 'closed_blade_disconnect_switch', 'closed_tandem_disconnect_switch', 'current_transformer',
-           'fuse_disconnect_switch', 'glass_disc_insulator', 'lightning_arrester', 'muffle',
-           'open_blade_disconnect_switch', 'open_tandem_disconnect_switch', 'porcelain_pin_insulator',
-           'potential_transformer', 'power_transformer', 'recloser', 'tripolar_disconnect_switch']
+CLASSES = ['__background__', 'cable', 'tower_lattice', 'tower_tucohy', 'tower_wooden']
 
 ENCODER = 'resnet101'
 ENCODER_STUDENT = 'resnet18'
 ENCODER_WEIGHTS = 'imagenet'
 ACTIVATIONS = 'softmax2d'
-
-
-MODEL_PATH = 'model/substation/model_ResNet101.pth'
 
 XAI_METHODS = [GradCAM, GradCAMPlusPlus, EigenCAM, EigenGradCAM, ScoreCAM, HiResCAM, AblationCAM, XGradCAM, LayerCAM,
                FullGrad]
